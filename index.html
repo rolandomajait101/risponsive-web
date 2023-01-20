@@ -7,29 +7,28 @@
     <title>my_portfolio</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://kit.fontawesome.com/3d19df2003.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
 
 </head>
 <body>
     <header>
         <div class="nav-center">
             <nav>
-                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" width="100px" height="150px"></a>
-                <!-- toggle btns -->
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            
                 <div class="toggle-icon">
-                    <span class="toggle-btn bars"><i class="fa-solid fa-bars"></i></span>
-                    <span class="toggle-btn times"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    <span class="toggle-btn fa-bars"><i class="fa-solid fa-bars"></i></span>
+                    <span class="toggle-btn fa-xmark"><i class="fa-solid fa-xmark"></i></span>
                 </div>
             </nav>
 
-            <!-- ul container -->
             <div class="links-container">
                 <div class="nav-link-wrapper">
                     <ul class="nav-links">
                         <li>
                             <a href="index.html" class="link">
-                                <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-house"></i>
                             </a>
                         </li>
                         <li><a href="about.html" class="link"><span>About</span></a></li>
@@ -38,24 +37,34 @@
                         <li><a href="Contact.html" class="link"><span>Contact</span></a></li>
                         <li><a href="career.html" class="link"><span>Career</span></a></li>
                     </ul>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rolando.majait.5?mibextid=ZbWKwL" class="link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/tottskie16/photo" class="link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/p/CjiAuhIJPCymsB0DI1SvgeTUWm304aNqhqSjtw0/" class="link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/rolandz16" class="link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCG2skpNoSKjVpLNsHROlFmg/" class="link"><i class="fab  fa-youtube"></i></a>
+                    </div>
+                  
                 </div>
                 
             </div>
-            <!-- resume link -->
-            <a href="#" class="resume">Portfolio</a>
+            
+            <a href="index.html" class="resume">Portfolio</a>
         </div> 
-        <!-- nav center div above -->
+        
     </header>
-    <!-- section 1 starts below -->
-   <section class="section-1" id="home">
+
+    <section class="section-1" id="home">
         <div class="container">
             <div class="about-desc">
                 <h2>Hi,</h2>
-                <h1 id="name">I'm Rolando </h1>
-                <h1 id="job">UI/UX Designer, Web Developer</h1>
-                <p><q>Passionate about coding and Designing...</q></p>
-                <!-- contact me button -->
-                 <a href="contact.html" class="contact-button">
+                <h1 id="name">I'm Rolando <span class="auto-typed"></span>
+                </h1>
+                <h1 id="job">Designer, Web Developer</h1>
+                <p><q>Passionate about Photography and Designing...</q></p>
+               
+                <a href="#" class="contact-button">
                     <div>
                         <span class="bg"></span>
                         <span class="base"></span>
@@ -63,31 +72,28 @@
                             contact me
                         </span>
                     </div>
-                </a> 
-                    <!-- contact me button ends here -->
-
-                <!-- achievement section -->
+                </a>
+           
+              
                 <div class="achievement">
                     <div class="ach">
-                        <h1>37</h1>
-                        <span>Completed Projects</span>
-                    </div>
-                    <!--  -->
-                   <div class="ach">
+                        <h1>17</h1>
+                        <span>Completed designs</span>
+                    </div> <div class="ach">
                     <h1>57</h1>
-                    <span>Completed Designs</span>
+                    <span> Complete Photography</span>
                    </div>
-                </div> 
+                </div>
             
-            </div> 
-            <!-- about desc div is above -->
+            </div>
+        
         </div>
-        <!-- hero image div below -->
+         
         <div class="hero-img">
-            <img src="images/Hoodie man.png" alt="Hoodie man" class="reponsive">
+            <img src="images/Hoodie man.png" alt="Hoodie man">
         </div>
-     <!-- my bubbles -->
-      <ul class="logo-animation">
+    </section>
+    <ul class="logo-animation">
         <li></li>
         <li><img src="images/Hoodie man.png" alt="logo" width="700" height="705"></li>
         <li></li>
@@ -95,9 +101,9 @@
         <li></li>
         <li></li>
         <li></li>
-      </ul> 
-    
-      <div class="wrapper">
+    </ul>
+    <section class="wrappers">
+    <div class="wrapper">
         <div class="button">
            <div class="icon">
             <a href="https://www.facebook.com/rolando.majait.5?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
@@ -129,20 +135,17 @@
            </div>
            <span>YouTube</span>
         </div> 
-
     </section>
-    <!-- footer section -->
     <footer>
         <div class="footer-content">
-            <p>Copryright &copy; Built By <span>Rolando</span> 2023 | All Right Reserved.</p>
+            <p>Copryright &copy;<span>Rolando</span> 2023 | All Right Reserved.</p>
         </div>
     </footer>
 
-    <!-- scripts are down below -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>                        
+    <script>
+    AOS.init({ duration : 1500, easing: 'ease-in-out'});
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
 </body>
