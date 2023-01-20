@@ -1,4 +1,3 @@
-// select toggle btn wrapper
 const toggleBtnIcons = document.querySelector('.toggle-icon');
 // select both the toggle btns as well the bars and the times
 const toggleBtnBars = document.querySelector('.times');
@@ -29,7 +28,6 @@ function toggleIcons(){
     }
 }
 toggleBtnIcons.addEventListener('click', toggleIcons);
-
 // links items
 const links = document.querySelectorAll('.link');
 
@@ -67,7 +65,6 @@ const myfunction = (state) => {
     }
 }
 
-
 // back to top icon functionality
 const scrollLink = document.querySelector('.scroll-link');
 window.addEventListener('scroll', function (){
@@ -81,69 +78,37 @@ window.addEventListener('scroll', function (){
 
 
 // auto type section
-let typed = new Typed('.auto-typed',{
-    strings: ['lmarex,'],
+let typed = new typed('.auto-typed',{
+    strings: ['Rolando,'],
     typeSpeed: 220,
     backSpeed: 220,
     loop: true,
- });
-
-
-
-
-
-
-
-
-// javascript functionality for Map
-
-function initMap(){
-   const lagos = {lat: 6.5244, lng: 3.3792};
-    const map = new google.maps.Map(document.querySelector('.map'),{
-       zoom : 4,
-        center: lagos,
-    });     const marker = new google.maps.Marker({
-        position: lagos,
-         map: map,
-    });
- }
-
- var mybubbles = document.getElementsByClassName("ani-bubble");
-
-var bubblecolors = [ "#c5a5ab", "#e3e2dd", "#87a6c0" ];
-
-for (var i = 0; i < mybubbles.length; i++) {
-
-  mybubbles[i].style.backgroundColor = bubblecolors[Math.floor(Math.random() * bubblecolors.length)];
-  mybubbles[i].style.opacity = Math.random()*.75;
-
-  var bubblesize = (Math.floor(Math.random() * 9)+2) * 50;
-
-  mybubbles[i].style.width = bubblesize+"px";
-  mybubbles[i].style.height = bubblesize+"px";
-  mybubbles[i].style.borderRadius = (bubblesize/2)+"px";
-
-  mybubbles[i].style.left = Math.floor(Math.random() * 100) + "%";
-
-  mybubbles[i].style.animationDuration = Math.floor(Math.random() * 16)+8 + "s";
-  mybubbles[i].style.animationDelay = Math.floor(Math.random() * 8) + "s";
-
-}
-
-$( document ).ready(function() {
-  jQuery.expr.filters.offscreen = function(el) {
-  return (
-      (el.offsetLeft + el.offsetWidth) < 0 
-      || (el.offsetTop + el.offsetHeight) < 0
-      || (el.offsetLeft > window.innerWidth || el.offsetTop > window.innerHeight)
-    );  
-    };
-  setInterval(function(){
-    $('.ani-bubble').each(function(){
-      if($(this).is(':offscreen')){
-       var bubbleoffset = Math.floor((Math.random() * 140) - 19);
-         $(this).css({ 'left': bubbleoffset+'%' }); 
-      }
-    });
-  },50);
 });
+//function
+$(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
+
+  $(document).ready(function(){
+    var docWidth = $('c').width(),
+        $wrap = $('#wrap'),
+        $images = $('#wrap .hb'),
+        slidesWidth = $wrap.width();
+    
+    $(window).on('resize', function(){
+      docWidth = $('c').width();
+      slidesWidth = $wrap.width();
+    })
+    
+    $(document).mousemove(function(e) {
+      var mouseX = e.pageX,
+          offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+      
+      $images.css({
+        '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+                'transform': 'translate3d(' + -offset + 'px,0,0)'
+      });
+    });
+  })
